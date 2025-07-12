@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jonathan Vincent Chandra Vamsi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2c7af57d9.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+  <style>
+    :root {
+      --primary: #134fa2;
+      --secondary: #e0e7ff;
+      --dark: #1e293b;
+      --light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #2563eb);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--secondary);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+
+    .sliding-name {
+      font-size: 2.7rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ffffff, #ffea00, #ffffff);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: slideIn 1.5s ease-out, shine 5s linear infinite;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes shine {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60%;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary), #60a5fa);
+      border-radius: 2px;
+    }
+
+    #about p {
+      margin-bottom: 1rem;
+    }
+
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+    }
+
+    #skills li {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0.5rem 1.1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    #skills li:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    #certificates ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #certificates li {
+      margin-bottom: 0.6rem;
+      background: #f1f5f9;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    #certificates a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #certificates a:hover {
+      text-decoration: underline;
+    }
+
+    #contact ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #contact li {
+      margin-bottom: 0.7rem;
+      font-size: 1.05rem;
+    }
+
+    #contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="vamsi.jpg" alt="Jonathan Vincent Chandra Vamsi" class="avatar" />
+    <h1 class="sliding-name">Jonathan Vincent Chandra Vamsi</h1>
+    <p>Computer Science Student</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a highly motivated and dedicated computer science student with hands-on experience in software engineering, and IoT systems. I have strong proficiency in HTML, CSS, and Java for building responsive and interactive websites and applications.</p>
+      <p>My passion for problem-solving is reflected in my experience with Data Structures and Algorithms (DSA), and I am eager to apply my knowledge to real-world software challenges. I have also worked on several IoT projects, integrating sensors and devices to create intelligent, connected solutions.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>DSA</li>
+        <li>IoT</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Smart Site Selection</h3>
+          <p>QGIS + MCDM to identify optimal housing locations.</p>
+        </div>
+        <div class="card">
+          <h3>Paralysis Patient Monitor</h3>
+          <p>IoT solution for real-time health alerts and logs.</p>
+        </div>
+        <div class="card">
+          <h3>Noise Detection System</h3>
+          <p>IoT device to measure and report environmental decibel levels.</p>
+        </div>
+        <div class="card">
+          <h3>Countdown Timer App</h3>
+          <p>Android app with user-friendly interface for timing tasks/events.</p>
+        </div>
+        <div class="card">
+          <h3>Soil Nutrient Identifier</h3>
+          <p>Analyzes soil samples and suggests improvements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul>
+       <ul>
+  <li>🎓 <a href="https://www.credly.com/badges/cc0936c1-117a-4f22-9222-ddc4c0b5a9e3/public_url">Introduction to Modern AI</a></li>
+  <li>🔊 <a href="https://www.netacad.com/certificates?issuanceId=e394bd5c-d152-4aa0-872e-7a64a678453b">Noise Detection System (IoT) - Techknots</a></li>
+  <li>🏠 Smart Site Selection using QGIS and MCDM</li>
+  <li>🕸️ <a href="https://drive.google.com/file/d/1Ke-Vc6tLjCe82CP1yTJ4hVuAbowda8g0/view?usp=drive_link">Web Development Intern - Vaultofcodes</a></li>
+  <li>💻 <a href="https://www.credly.com/badges/b344308c-0c43-42fd-9b3b-7f772c84e3c3">Introduction to IoT - Cisco Networking Academy</a></li>
+  <li>⭕ <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=A254AB5018C9A32B59706DAE84ACA0EE02DD718B67D116626EC9E4AC16F0FA62">Oracle Cloud Infrastructure 2023 Certified Foundations Associate</a></li>
+  <li>🧑‍💻 <a href="https://www.netacad.com/certificates?issuanceId=6c60400d-c281-4521-b458-ecc001cbbb49">Introduction to IoT and Digital Transformation</a></li>
+  <li>🤖 <a href="https://www.cloudskillsboost.google/profile/badges">GenAI - Google Cloud Skills Boost</a></li>
+</ul>
+
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>📧 Email: <a href="mailto:luckypollisetty@gmail.com">luckypollisetty@gmail.com</a></li>
+        <li>🐱 GitHub: <a href="https://github.com/vamsipollisetti" target="_blank">vamsipollisetti</a></li>
+        <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/polisetty-jonathan-vincent-chandra-vamsi-a594ba261" target="_blank">Jonathan Vincent</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Jonathan Vincent Chandra Vamsi. All Rights Reserved.
+  </footer>
+</body>
+</html>
